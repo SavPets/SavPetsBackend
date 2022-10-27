@@ -1,0 +1,27 @@
+{
+  "name": "savpetsbackend",
+  "version": "1.0.0",
+  "description": "Repositório que servirá como base para conclusão da etapa 3 - desenvolvimento da parte funcional do projeto.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavPets/SavPetsBackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavPets/SavPetsBackend/issues"
+  },
+  "homepage": "https://github.com/SavPets/SavPetsBackend#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.3",
+    "sha1": "^1.1.1"
+  }
+}
