@@ -16,8 +16,8 @@ router.get('/departamentos', (req, res) => res.render('management/departament/de
 router.get('/cadastrar-departamento', (req, res) => res.render('management/departament/departament-create'))
 router.get('/atualizar-departamento', (req, res) => res.render('management/departament/departament-update'))
 
-router.get('/funcionários', (req, res) => res.render('management/employee/employee'))
-router.get('/cadastrar-funcionário', (req, res) => res.render('management/employee/employee-create'))
-router.get('/atualizar-funcionário', (req, res) => res.render('management/employee/employee-update'))
+router.get('/funcionarios', (req, res) => res.render('management/employee/employee'))
+router.get('/cadastrar-funcionario', (req, res) => res.render('management/employee/employee-create'))
+router.get('/atualizar-funcionario', (req, res) => res.render('management/employee/employee-update'))
 
 module.exports = router
