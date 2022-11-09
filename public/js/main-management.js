@@ -113,7 +113,7 @@ quitOption.forEach(option => {
                 title: 'Saindo da sessão'
                 })
     
-                setTimeout(() => window.location.href = "./index.html", 3100)
+                setTimeout(() => window.location.href = "/", 3000)
             }
         })
     })
