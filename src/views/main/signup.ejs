@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="identify-container_form container-form">
-                    <form class="form" action="" method="post">
+                    <form class="form" action="/cadastrar/acesso" method="post">
                         <div class="form-instruction">
                             <p>Preenchimento obrigatório</p><span>*</span>
                         </div>
@@ -37,12 +37,29 @@
                                 <input class="form-dision_inputfull" type="text" placeholder="Último nome *" name="lastName" required>
                             </div>
 
+                            <div class="form-dision_half">
+                                <input class="form-dision_inputfull" type="text" placeholder="Cargo *" name="occupation" required>
+                                <input class="form-dision_inputfull" type="text" placeholder="Departamento *" name="departament" required>
+                            </div>
+
+                            <input class="form-dision_inputfull" type="date" placeholder="Data de Nascimento *" name="birthDate" required>
+
+                            <div class="form-dision_half">
+                                <input class="form-dision_inputfull" type="text" placeholder="Telefone *" name="telephone" required>
+                                <input class="form-dision_inputfull" type="number" placeholder="CPF *" name="cpf" required>
+                            </div>
+
+                            <div class="form-dision_half">
+                                <input class="form-dision_inputfull" type="number" placeholder="CEP *" name="cep" required>
+                                <input class="form-dision_inputfull" type="number" placeholder="Número da casa *" name="houseNumber" required>
+                            </div>
+
                             <input class="form-dision_inputfull" type="email" placeholder="Email *" name="email" required>
                             <input class="form-dision_inputfull" type="password" placeholder="Senha *" name="password" required>
                             <input class="form-dision_inputfull" type="password" placeholder="Confirmar senha *" name="confirmedPassword" required>
                         </div>
     
-                        <a href="./panel.html" class="btn">Cadastrar</a>
+                        <input type="submit" class="btn" value="Cadastrar"></input>
                     </form>
                 </div>
 

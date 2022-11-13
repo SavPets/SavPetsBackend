@@ -4,7 +4,8 @@
   "description": "Repositório que servirá como base para conclusão da etapa 3 - desenvolvimento da parte funcional do projeto.",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "db": "node src/controllers/sql/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,11 @@
   },
   "homepage": "https://github.com/SavPets/SavPetsBackend#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "mysql2": "^2.3.3",
     "nodemon": "^2.0.20",
-    "sequelize": "^6.25.3",
-    "sha1": "^1.1.1"
+    "sequelize": "^6.25.3"
   }
 }
