@@ -119,22 +119,9 @@ quitOption.forEach(option => {
     })
 })
 
-// =============== DATATABLES SETTINGS ===============
-$(document).ready(function () {
-    $('#example').DataTable({
-        responsive: true
-    })
-})
-
 // =============== ACTIONS TABLE SETTINGS ===============
-const deleteBtn = document.querySelectorAll('.column-action_delete')
-
-deleteBtn.forEach(btn => {
-    btn.addEventListener('click', onClickDeleteBtn)
-})
-
-function onClickDeleteBtn() {
-    Swal.fire({
+async function onClickDeleteBtn() {
+    const isConfirmed = await Swal.fire({
         title: 'Tem certeza?',
         text: "Você não poderá reverter isso!",
         icon: 'warning',
@@ -143,6 +130,7 @@ function onClickDeleteBtn() {
         cancelButtonColor: '#ff7575',
         cancelButtonText: 'Cancelar',
         confirmButtonText: 'Sim, deletar!'
+
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire(
@@ -150,6 +138,10 @@ function onClickDeleteBtn() {
                 'Registro apagado com sucesso.',
                 'success'
             )
-        }
+            
+            return result.isConfirmed
+        }            
     })
+
+    return isConfirmed
 }

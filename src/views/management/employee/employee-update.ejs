@@ -27,33 +27,38 @@
                     </a>
 
                     <div class="main-container_form">
-                        <form class="form" action="" method="post">
+                        <form class="form" action="/atualizar-funcionario/controle" method="post">
                             <div class="form-instruction">
                                 <p>Preenchimento obrigatório</p><span>*</span>
                             </div>
     
                             <div class="form-dision">
-                                <input class="form-dision_inputfull" type="number" placeholder="Código do funcionário *" name="code" value="2" required>
-                                <input class="form-dision_inputfull" type="number" placeholder="Código do cargo *" name="occupationCode" value="2" required>
-                                <input class="form-dision_inputfull" type="number" placeholder="Código do departamento *" name="departamentCode"  value="1"required>
                                 <div class="form-dision_half">
-                                    <input class="form-dision_inputfull" type="text" placeholder="Primeiro nome *" name="firstName" value="Evandro" required>
-                                    <input class="form-dision_inputfull" type="text" placeholder="Último nome *" name="lastName" value="Costa" required>
+                                    <input class="form-dision_inputfull" type="text" placeholder="Primeiro nome *" name="firstName" value="<%=selectedEmployeeRecord.primeiro_nome%>" required>
+                                    <input class="form-dision_inputfull" type="text" placeholder="Último nome *" name="lastName" value="<%=selectedEmployeeRecord.ultimo_nome%>" required>
                                 </div>
-                                <input class="form-dision_inputfull form-dision_top_right" type="date" placeholder="Data de nascimento *" value="1999-10-02" name="birthDate" required>
+    
                                 <div class="form-dision_half">
-                                    <input class="form-dision_inputfull" type="number" placeholder="Telefone *" name="telephone" value="11942282299" required>
-                                    <input class="form-dision_inputfull" type="number" placeholder="CPF *" name="cpf" value="40911234602" required>
+                                    <input class="form-dision_inputfull" type="text" placeholder="Cargo *" name="occupation" value="<%=selectedEmployeeRecord.cargo%>" required>
+                                    <input class="form-dision_inputfull" type="text" placeholder="Departamento *" name="departament" value="<%=selectedEmployeeRecord.departamento%>" required>
                                 </div>
+    
+                                <input class="form-dision_inputfull" type="date" placeholder="Data de Nascimento *" name="birthDate" value="<%=selectedEmployeeRecord.data_nascimento%>" required>
+    
                                 <div class="form-dision_half">
-                                    <input class="form-dision_inputfull" type="number" placeholder="CEP *" name="cep" value="05151481" required>
-                                    <input class="form-dision_inputfull" type="number" placeholder="Número da casa *" name="houseNumber" value="20" required>
+                                    <input class="form-dision_inputfull" type="text" placeholder="Telefone *" name="telephone" value="<%=selectedEmployeeRecord.telefone%>" required>
+                                    <input class="form-dision_inputfull" type="number" placeholder="CPF *" name="cpf" value="<%=selectedEmployeeRecord.cpf%>" required>
                                 </div>
-                                <input class="form-dision_inputfull" type="email" placeholder="Email *" name="email" value="vicenzzo@gmail.com" required>
-                                <input class="form-dision_inputfull" type="password" placeholder="Senha *" name="password" value="123tote" required>
+    
+                                <div class="form-dision_half">
+                                    <input class="form-dision_inputfull" type="number" placeholder="CEP *" name="cep" value="<%=selectedEmployeeRecord.cep%>" required>
+                                    <input class="form-dision_inputfull" type="number" placeholder="Número da casa *" name="houseNumber" value="<%=selectedEmployeeRecord.numero_casa%>" required>
+                                </div>
+    
+                                <input class="form-dision_inputfull" type="email" placeholder="Email *" name="email" value="<%=selectedEmployeeRecord.email%>" required>
                             </div>
         
-                            <a href="./employee.html" class="btn">Atualizar</a>
+                            <input type="submit" class="btn" value="Atualizar"></input>
                         </form>
                     </div>
                 </div>

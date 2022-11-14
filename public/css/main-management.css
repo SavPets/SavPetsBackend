@@ -337,7 +337,8 @@ ul{
     margin-bottom: 2.4rem;
 }
 
-.column-action{
+.column-action,
+li span.dtr-data .icon-action_delete{
     cursor: pointer;
 }
 
